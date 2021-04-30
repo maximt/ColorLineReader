@@ -1,0 +1,35 @@
+﻿<!doctype html>
+<html>
+  <head>
+    <title>LineReader</title>
+
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+    <h3>Select to:</h3>
+    <button id="previewSelectedText">Paragraphs</button>
+    <button id="previewParentNode">Parent block</button>
+    <button id="previewSimilarNodes">Similar blocks</button>
+
+    <h3>Colors:</h3>
+    <label>
+      <input id="startColor" type="color" data-config="true" value="#ff0000"/>
+      Start
+    </label>
+    <label>
+      <input id="endColor" type="color" data-config="true" value="#0000ff"/>
+      End
+    </label>
+    <label>
+      <input id="previewColor" type="color" data-config="true" value="#cccccc"/>
+      Preview
+    </label>
+    <h3>Font:</h3>
+    <label>
+      Size: 
+      <input id="fontSize" type="number" data-config="true" value="100" min="50" max="200"/>%
+    </label>
+    <script src="script.js"></script>
+  </body>
+</html>
