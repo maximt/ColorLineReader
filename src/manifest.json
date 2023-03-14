@@ -3,15 +3,14 @@
   "version": "1.0",
   "description": "Dyslexia Reader",
   "background": {
-    "scripts": ["chrome/background.js"],
-    "persistent": false
+    "service_worker": "chrome/background.js"
   },
   "content_scripts": [{
       "matches": ["<all_urls>"],
       "js": ["chrome/content.js", "app/colorlinereader.js"],
       "run_at": "document_end"
   }],
-  "page_action" : {
+  "action" : {
     "default_icon" : "img/icon-19.png",
     "default_title" : "ColorLineReader",
     "default_popup": "ui/preview/page.html"
@@ -30,5 +29,5 @@
     "128" : "img/icon-128.png"
   },
   "offline_enabled": true,
-  "manifest_version": 2
+  "manifest_version": 3
 }
