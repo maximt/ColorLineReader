@@ -1,6 +1,6 @@
 {
   "name": "ColorLineReader",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Dyslexia Reader",
   "background": {
     "service_worker": "chrome/background.js"
@@ -16,9 +16,7 @@
     "default_popup": "ui/preview/page.html"
   },
   "permissions" : [
-    "contextMenus",
     "declarativeContent",
-    "tabs",
     "storage"
   ],
   "icons" : {
